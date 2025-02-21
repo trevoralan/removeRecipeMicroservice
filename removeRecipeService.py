@@ -41,7 +41,8 @@ def recipe_check(action_path, meal_path):
                 """Read in meal plan and assign to the meal plan array then close file"""
                 meal_plan = open(meal_path, 'r')
                 for meal in meal_plan:
-                    meal_array.append(meal[:-1])
+                    meal = meal.removesuffix("\n")
+                    meal_array.append(meal)
                 meal_plan.close()
                 """Test the read in recipe against the meal plan array and remove if found"""
                 for item in meal_array:
