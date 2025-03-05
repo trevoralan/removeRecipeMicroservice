@@ -44,4 +44,4 @@ dispFile.close()
 The service has a subfolder, ActionFolder, where the removeMealActions.txt, displayActions.txt, shoppingListActions.txt, and mealPlan.txt files are located and expected to be able to be read/written from in order to action upon.
 
 # UML Sequence Diagram
-
+![UML Sequence Diagram](https://github.com/trevoralan/removeRecipeMicroservice/blob/main/UML.png)
